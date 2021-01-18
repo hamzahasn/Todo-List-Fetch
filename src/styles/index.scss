@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 /* 
     You can write your own styles here...
@@ -24,8 +25,10 @@ body{
 
 h1{
     font-size: 100px;
-  font-family:'Caveat', cursive;
-color:#feffff}
+font-family: 'Permanent Marker';
+color:white;
+text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
 
 .wrap{
     height: 100vh;
@@ -65,6 +68,7 @@ li {
         overflow: hidden;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
     }
+    
 }
 
 .status{
@@ -83,13 +87,22 @@ li {
     }
 }
 
-.list-group-item:last-child {
+.list-group-item:last-child 
+
+ {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     border-bottom: 0;
+        cursor: pointer;
 
-    .delete ml-auto {
+ 
+
+    .delete ml-auto
+    {
         color: red;
         background-color: red;
     }
+
+ 
+
 }
